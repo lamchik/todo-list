@@ -1,0 +1,77 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #756E71;
+    width: 350px;
+    padding: 16px 17px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 40px;
+}
+
+.taskContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 250px;
+    transition: 0.2s linear;
+}
+
+.taskContainer:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.taskHeader {
+    font-family: "Actor", SansSerif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F4F4F4;
+    margin: 0;
+}
+
+.taskHeader_type_strikethrough {
+    text-decoration: line-through;
+}
+
+.taskDescription {
+    font-family: "Actor", SansSerif;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.openedTask {
+    display: flex;
+    flex-direction: column;
+}
+
+.fullTaskHeader {
+    font-family: "Actor", SansSerif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin: 0;
+}
+
+.fullDescription {
+    font-family: "Actor", SansSerif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+
+

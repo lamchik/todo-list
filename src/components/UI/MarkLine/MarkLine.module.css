@@ -1,0 +1,23 @@
+.colorLine {
+    width: 5px;
+    height: 40px;
+    border-radius: 3px;
+    margin-right: 14px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.colorLine__blue {
+    background-color: #366EFF;
+}
+
+.colorLine__red {
+    background-color: #C2A3B0;
+}
+.colorLine__yellow {
+    background-color: #FFEB33;
+}
+
+.colorLine__grey {
+    background-color: #A9A9A9;
+}

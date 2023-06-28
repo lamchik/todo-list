@@ -15,11 +15,11 @@ interface Props {
 
 export default function SimpleAccordion(props: Props) {
   return (
-    <div>
+    <div className={styles.container}>
       <Accordion sx={{
         backgroundColor: 'rgba(0, 0, 0, 0)',
-        border: 'none',
-        boxShadow: 'none'
+        boxShadow: 'none',
+        borderRadius: '25px',
       }}>
         <AccordionSummary
           expandIcon={<Arrow />}

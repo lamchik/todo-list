@@ -1,7 +1,5 @@
 .container {
     max-height: 100%;
     background: #756E71;
-    box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.15), -8px -8px 20px rgba(255, 255, 255, 0.05);
     border-radius: 40px;
-    overflow: scroll;
 }

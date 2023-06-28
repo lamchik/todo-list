@@ -1,3 +1,11 @@
+.container {
+    overflow: scroll;
+    border-radius: 25px;
+}
+
+@media (max-height: 320px) {
+
+}
 
 .title {
     font-family: 'Abhaya Libre';

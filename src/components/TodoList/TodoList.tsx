@@ -68,13 +68,11 @@ export const TodoList = () => {
   return (
     <div className={styles.container}>
       <Header/>
-      {/*<CheckboxLabels label='Today Tasks' checked={isTodayTasksOpen} onClick={openTodayTasks}/>*/}
-
-        <SimpleAccordion
-          title={todayDate.toDateString()}
-          details={
-          <TaskList onClickToOpenPopup={openPopup} tasks={tasks}/>
-        }/>
+      <SimpleAccordion
+        title={todayDate.toDateString()}
+        details={
+        <TaskList onClickToOpenPopup={openPopup} tasks={tasks}/>
+      }/>
       <Popup
         isVisible={isVisiblePopup}
         setIsVisiblePopup={setIsVisiblePopup}>

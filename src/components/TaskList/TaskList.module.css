@@ -2,4 +2,6 @@
     max-height: 100%;
     background: #756E71;
     border-radius: 40px;
+    padding: 10px 10px;
+    box-sizing: border-box;
 }

@@ -13,14 +13,24 @@ export type ActionAddTask = {
   type: "addTask";
   value: TaskType;
 };
-console.log(initialState, 'initialState')
 
-export const reducer = (state = initialState, action: ActionAddTask) => {
+export type ActionDeleteTask = {
+  type: "deleteTask";
+  value: TaskType
+}
+
+type Actions = ActionAddTask | ActionDeleteTask
+
+export const reducer = (state = initialState, action: Actions) => {
   switch (action.type) {
     case 'addTask':
-      console.log('state', state)
       state.tasks.push(action.value)
+      return {...state, tasks: state.tasks};
+
+    case 'deleteTask':
+      state.tasks.filter((task) => task.id !== action.value.id)
       return {...state, tasks: state.tasks}
+
     default:
         return state
   }

@@ -7,13 +7,24 @@ import CustomizedSwitch from "../UI/Switch/Switch";
 import {TaskType} from "../../typings";
 import {MarkLine} from "../UI/MarkLine/MarkLine";
 import {Popup} from "../UI/Popup/Popup";
+import {IconButtonSizes} from "../UI/DeleteIconButton/DeleteIconButton";
+// import {Button} from "@mui/material";
+// import {useDispatch} from "react-redux";
 
 
 export const Task = (task: TaskType) => {
 
   const [isVisiblePopup, setIsVisiblePopup] = useState(false)
   const [isCheckedTask, setIsCheckedTask] = useState(false)
+  // const dispatch = useDispatch();
 
+
+  // const dispatchAction = useCallback(
+  //   (action: ActionDeleteTask) => {
+  //     dispatch(action);
+  //   },
+  //   [dispatch]
+  // );
 
   const openPopup = useCallback(() => {
     setIsVisiblePopup(!isVisiblePopup)
@@ -22,6 +33,16 @@ export const Task = (task: TaskType) => {
   const check = useCallback(() => {
     setIsCheckedTask(!isCheckedTask)
   }, [isCheckedTask])
+
+  const deleteTask = useCallback((event: any) => {
+    console.log(event.)
+    // dispatchAction({
+    //   type: 'deleteTask',
+    //   value: {
+    //
+    //   }
+    // })
+  }, [])
 
 
   return (
@@ -38,6 +59,9 @@ export const Task = (task: TaskType) => {
         </div>
 
         <CustomizedSwitch checked={isCheckedTask} onClick={check}/>
+        <div className={styles.deleteButton}>
+          <IconButtonSizes onClick={deleteTask}/>
+        </div>
 
       </div>
 

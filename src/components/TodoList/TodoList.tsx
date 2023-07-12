@@ -40,13 +40,11 @@ export const TodoList = () => {
   );
 
   const handleChangeTitle = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(event.target.value)
     setTitle(event.target.value)
   }
 
   const handleChangeDescription = (event: React.ChangeEvent<HTMLInputElement>) => {
     setDescription(event.target.value)
-    console.log(event.target.value, description)
   }
 
 

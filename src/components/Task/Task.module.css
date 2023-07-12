@@ -4,18 +4,21 @@
     align-items: center;
     justify-content: space-between;
     background: #756E71;
-    width: 350px;
-    padding: 16px 17px;
+    width: 100%;
+    padding: 25px 17px;
     box-sizing: border-box;
     border: none;
     border-radius: 40px;
+    box-shadow: 0.5rem 0.7rem 1rem rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+
 }
 
 .taskContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
     width: 250px;
     transition: 0.2s linear;
 }
@@ -72,6 +75,13 @@
     line-height: 17px;
     color: #000000;
 }
+
+.deleteButton {
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+}
+
 
 
 
